@@ -1,0 +1,50 @@
+.planets-container {
+  font-family: 'Arial Narrow Regular';
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.planets-image {
+  height: 200px;
+  background-image: url("../img/coruscant.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-text {
+  color: rgb(253, 202, 24);
+}
+
+
+hr {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.planets-inner-right {
+  padding-top: 20px;
+}
+
+.nextandback  {
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.next{
+  float: right;
+  width: 68px;
+}
+
+.previous {
+  float: left;
+  width: 90px;
+}
+
+@media (min-width: 768px) {.container{max-width: 1025px;}}
+
+
+@media (min-width: 426px){
+  .planets-image {
+    height: 400px;
+  }
+}

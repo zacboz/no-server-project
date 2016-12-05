@@ -1,0 +1,49 @@
+<section class="species-container">
+  <div class='row'>
+    <div class='species-image'>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+        <div class='col-xs-1 nextandback previous' ng-click='getSpecies(previous)' ng-show='previous'> &laquo; Previous</div>
+        <div class='col-xs-1 nextandback next' ng-click='getSpecies(next)' ng-show='next'>Next &raquo;</div>
+    </div>
+  </div>
+
+    <section class="species-card container" ng-repeat='specie in species'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <h2 class='header-text'>{{specie.name}}</h2>
+            <hr>
+          </div>
+
+          <div class="species-inner-left col-sm-8">
+            <h3> Homeworld: {{specie.homeworldName}}</h3>
+            <p> Language: {{specie.language}}</p>
+            <p> Classification: {{specie.classification}}</p>
+            <p> Avg lifespan: {{specie.average_lifespan}}</p>
+            <p> Famous people: <span ng-repeat='peopleName in specie.peopleNames'>{{peopleName}}<span ng-hide='$last'>, </span></span><span ng-hide='specie.peopleNames.length > 0'>None</span></p>
+
+
+
+          </div>
+          <div class="species-inner-right col-sm-4">
+            <p>Avg height: {{specie.average_height}} cm</p>
+            <p>Hair colors: {{specie.hair_colors}}</p>
+            <p>Skin colors: {{specie.skin_colors}}</p>
+            <p>Eye colors: {{specie.eye_colors}}</p>
+
+          </div>
+        </div>
+
+
+    </section>
+
+    <div class='container'>
+      <div class='row'>
+          <div class='col-xs-1 nextandback previous' ng-click='getSpecies(previous)' ng-show='previous'> &laquo; Previous</div>
+          <div class='col-xs-1 nextandback next' ng-click='getSpecies(next)' ng-show='next'>Next &raquo;</div>
+      </div>
+    </div>
+
+</section>

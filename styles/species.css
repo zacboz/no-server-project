@@ -1,0 +1,50 @@
+.species-container {
+  font-family: 'Arial Narrow Regular';
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.species-image {
+  height: 200px;
+  background-image: url("../img/sw-species.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.header-text {
+  color: rgb(253, 202, 24);
+}
+
+
+hr {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.species-inner-right {
+  padding-top: 30px;
+}
+
+.nextandback  {
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.next{
+  float: right;
+  width: 68px;
+}
+
+.previous {
+  float: left;
+  width: 90px;
+}
+
+@media (min-width: 768px) {.container{max-width: 1025px;}}
+
+
+@media (min-width: 426px){
+  .species-image {
+    height: 400px;
+  }
+}

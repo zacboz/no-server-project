@@ -1,0 +1,59 @@
+/*.people-view {
+  max-width: 1025px;
+  margin: 0 auto;
+}*/
+
+.people-container {
+  font-family: 'Arial Narrow Regular';
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.people-image {
+  height: 200px;
+  background-image: url("../img/epicstarwars.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-text {
+  color: rgb(253, 202, 24);
+}
+
+
+hr {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.people-inner-left{
+
+}
+
+.people-inner-right {
+  padding-top: 10px;
+}
+
+.nextandback  {
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.next{
+  float: right;
+  width: 68px;
+}
+
+.previous {
+  float: left;
+  width: 90px;
+}
+
+@media (min-width: 768px) {.container{max-width: 1025px;}}
+
+
+@media (min-width: 426px){
+  .people-image {
+    height: 400px;
+  }
+}

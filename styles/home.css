@@ -1,0 +1,21 @@
+/* for jumbotron Move down content because we have a fixed navbar that is 50px tall */
+.jumbotron {
+    position: relative;
+    text-align: center;
+}
+
+.front-image {
+  color: rgb(253, 202, 24);
+  font-family: 'Star Jedi';
+  background:  url('../img/vader.jpg') no-repeat center top;
+  background-size: contain;
+  background-color: white;
+  padding: 150px 0;
+}
+
+@media (min-width: 426px){
+
+  .front-image {
+    padding: 250px 0px;
+  }
+}

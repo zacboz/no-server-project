@@ -1,0 +1,46 @@
+<div class='people-view'>
+<section class="people-container">
+  <div class='row'>
+    <div class='people-image'>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+        <div class='col-xs-1 nextandback previous' ng-click='getPeople(previous)' ng-show='previous'>&laquo; Previous</div>
+        <div class='col-xs-1 nextandback next' ng-click='getPeople(next)' ng-show='next'>Next &raquo;</div>
+    </div>
+  </div>
+    <section class="people-card container" ng-repeat='person in people'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <h2 class='header-text'>  {{person.name}}</h2>
+            <hr>
+          </div>
+
+          <div class="people-inner-left col-sm-8">
+            <h3>Born: {{person.birth_year}} on {{person.homeworldName}}</h3>
+            <h4>Gender: {{person.gender}}</h4>
+            <h4>Specie: {{person.specieName}}</h4>
+            <h4>Starship: <span ng-repeat='starshipName in person.starshipNames'>{{starshipName}}<span ng-hide='$last'>, </span></span><span ng-hide='person.starshipNames.length > 0'>None</span> </h4>
+
+
+          </div>
+          <div class="people-inner-right col-sm-4">
+            <p>Height: {{person.height}} cm</p>
+            <p>Mass: {{person.mass}} </p>
+            <p>Eye color: {{person.eye_color}}</p>
+            <p>Hair color: {{person.hair_color}}</p>
+            <p>Skin color: {{person.skin_color}}</p>
+
+          </div>
+        </div>
+
+    </section>
+    <div class='container'>
+      <div class='row'>
+          <div class='col-xs-1 nextandback previous' ng-click='getPeople(previous)' ng-show='previous'>&laquo;Previous</div>
+          <div class='col-xs-offset-10 col-xs-1 nextandback next' ng-click='getPeople(next)' ng-show='next'>Next&raquo;</div>
+      </div>
+    </div>
+</section>
+</div>

@@ -1,0 +1,47 @@
+<section class="starships-container">
+  <div class='row'>
+    <div class='starships-image'>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+        <div class='col-xs-1 nextandback previous' ng-click='getStarships(previous)' ng-show='previous'>&laquo; Previous</div>
+        <div class='col-xs-1 nextandback next' ng-click='getStarships(next)' ng-show='next'>Next &raquo;</div>
+    </div>
+  </div>
+
+    <section class="starships-card container" ng-repeat='starship in starships'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <h2 class='header-text'>  {{starship.name}}</h2>
+            <hr>
+          </div>
+
+          <div class="starships-inner-left col-sm-8">
+            <h3>Model: {{starship.model}}</h3>
+            <h3>Manufacturer: {{starship.manufacturer}}</h3>
+            <h4>Credits: {{starship.cost_in_credits}}</h4>
+            <h4>Class: {{starship.starship_class}} </h4>
+
+
+
+
+          </div>
+          <div class="starships-inner-right col-sm-4">
+            <p>Hyperdrive Rating: {{starship.hyperdrive_rating}}</p>
+            <p>Max Speed: {{starship.max_atmosphering_speed}}</p>
+            <p>Length: {{starship.length}} cm</p>
+            <p>Cargo Capacity: {{starship.cargo_capacity}}</p>
+            <p>Passengers: {{starship.passengers}}</p>
+
+          </div>
+        </div>
+
+    </section>
+    <div class='container'>
+      <div class='row'>
+          <div class='col-xs-1 nextandback previous' ng-click='getStarships(previous)' ng-show='previous'>&laquo;Previous</div>
+          <div class='col-xs-offset-10 col-xs-1 nextandback next' ng-click='getStarships(next)' ng-show='next'>Next&raquo;</div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+<section class="planets-container">
+  <div class='row'>
+    <div class='planets-image'>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+        <div class='col-xs-1 nextandback previous' ng-click='getPlanet(previous)' ng-show='previous'>&laquo; Previous</div>
+        <div class='col-xs-1 nextandback next' ng-click='getPlanet(next)' ng-show='next'>Next &raquo;</div>
+    </div>
+  </div>
+
+    <section class="planet-card container" ng-repeat='planet in planets'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <h2 class='header-text'>  {{planet.name}}</h2>
+            <hr>
+          </div>
+
+          <div class="planets-inner-left col-sm-8">
+            <h3> Poplulation: {{planet.population}}</h3>
+            <p> Terrain: {{planet.terrain}}</p>
+            <p> Homeworld to: <span ng-repeat='residentName in planet.residentNames'>{{residentName}}<span ng-hide='$last'>, </span></span><span ng-hide='planet.residentNames.length > 0'>None</span></p>
+
+          </div>
+          <div class="planets-inner-right col-sm-4">
+            <p> Climate: {{planet.climate}}</p>
+            <p>Diameter: {{planet.diameter}}</p>
+            <p>Gravity: {{planet.gravity}}</p>
+          </div>
+        </div>
+
+    </section>
+    <div class='container'>
+      <div class='row'>
+          <div class='col-xs-1 nextandback previous' ng-click='getPlanet(previous)' ng-show='previous'>&laquo;Previous</div>
+          <div class='col-xs-offset-10 col-xs-1 nextandback next' ng-click='getPlanet(next)' ng-show='next'>Next&raquo;</div>
+      </div>
+    </div>
+</section>
