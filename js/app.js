@@ -4,26 +4,26 @@ angular.module('starWarsApp', ['ui.router'])
         $stateProvider
             .state('home',{
                 url:'/',
-                templateUrl: "../views/home.html"
+                templateUrl: "./views/home.html"
             })
             .state('planets',{
                 url:'/planets',
-                templateUrl: '../views/planets.html',
+                templateUrl: './views/planets.html',
                 controller: 'planetsCtrl'
             })
             .state('species',{
                 url:'/species',
-                templateUrl: '../views/species.html',
+                templateUrl: './views/species.html',
                 controller: 'speciesCtrl'
             })
             .state('people',{
                 url:'/people',
-                templateUrl: '../views/people.html',
+                templateUrl: './views/people.html',
                 controller: 'peopleCtrl'
             })
             .state('starships',{
                 url:'/starships',
-                templateUrl: '../views/starships.html',
+                templateUrl: './views/starships.html',
                 controller: 'starshipsCtrl'
             });
 
