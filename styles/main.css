@@ -6,13 +6,21 @@ body {
   color: white;
 }
 
+@font-face {
+    font-family: 'star_jediregular';
+    src: url('fonts/starjedi-webfont.woff2') format('woff2'),
+         url('fonts/starjedi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
     color: rgb(253, 202, 24);
-    font-family: 'Star Jedi';
+    font-family: 'star_jediregular';
 }
 
 ul {
-  font-family: 'Star Jedi';
+  font-family: 'star_jediregular';
 }
 
 footer {

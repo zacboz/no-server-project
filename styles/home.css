@@ -6,7 +6,7 @@
 
 .front-image {
   color: rgb(253, 202, 24);
-  font-family: 'Star Jedi';
+  font-family: 'star_jediregular';
   background:  url('../img/vader.jpg') no-repeat center top;
   background-size: contain;
   background-color: white;
