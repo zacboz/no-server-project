@@ -18,14 +18,14 @@
           </div>
 
           <div class="planets-inner-left col-sm-8">
-            <h3> Poplulation: {{planet.population}}</h3>
+            <h3> Poplulation: {{planet.population | number}}</h3>
             <p> Terrain: {{planet.terrain}}</p>
             <p> Homeworld to: <span ng-repeat='residentName in planet.residentNames'>{{residentName}}<span ng-hide='$last'>, </span></span><span ng-hide='planet.residentNames.length > 0'>None</span></p>
 
           </div>
           <div class="planets-inner-right col-sm-4">
             <p> Climate: {{planet.climate}}</p>
-            <p>Diameter: {{planet.diameter}}</p>
+            <p>Diameter: {{planet.diameter | number}} km</p>
             <p>Gravity: {{planet.gravity}}</p>
           </div>
         </div>

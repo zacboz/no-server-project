@@ -20,7 +20,7 @@
           <div class="starships-inner-left col-sm-8">
             <h3>Model: {{starship.model}}</h3>
             <h3>Manufacturer: {{starship.manufacturer}}</h3>
-            <h4>Credits: {{starship.cost_in_credits}}</h4>
+            <h4>Credits: {{starship.cost_in_credits | number}}</h4>
             <h4>Class: {{starship.starship_class}} </h4>
 
 
@@ -29,10 +29,10 @@
           </div>
           <div class="starships-inner-right col-sm-4">
             <p>Hyperdrive Rating: {{starship.hyperdrive_rating}}</p>
-            <p>Max Speed: {{starship.max_atmosphering_speed}}</p>
+            <p>Max Speed: {{starship.max_atmosphering_speed | number}} km/h</p>
             <p>Length: {{starship.length}} cm</p>
-            <p>Cargo Capacity: {{starship.cargo_capacity}}</p>
-            <p>Passengers: {{starship.passengers}}</p>
+            <p>Cargo Capacity: {{starship.cargo_capacity | number}} Kg</p>
+            <p>Passengers: {{starship.passengers | number}}</p>
 
           </div>
         </div>
