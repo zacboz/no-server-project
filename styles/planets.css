@@ -6,8 +6,8 @@
 
 .planets-image {
   height: 200px;
-  background-image: url("../img/coruscant.jpg");
-  background-position: center;
+  background-image: url("../img/Coruscantimage.jpg");
+  background-position: top;
   background-size: cover;
 }
 

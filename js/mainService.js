@@ -2,7 +2,7 @@ angular.module('starWarsApp').service('mainService', function($http){
 
     this.getPlanet = function(passedurl) {
       if(passedurl === undefined){
-        var newurl = 'http://swapi.co/api/planets/';
+        var newurl = 'https://swapi.co/api/planets/';
       } else {
         var newurl = passedurl;
       }
@@ -39,7 +39,7 @@ angular.module('starWarsApp').service('mainService', function($http){
 
     this.getSpecies = function(passedurl) {
       if(passedurl === undefined){
-        var newurl = 'http://swapi.co/api/species/';
+        var newurl = 'https://swapi.co/api/species/';
       } else {
         var newurl = passedurl;
       }
@@ -83,7 +83,7 @@ angular.module('starWarsApp').service('mainService', function($http){
 
     this.getPeople = function(passedurl) {
       if(passedurl === undefined){
-        var newurl = 'http://swapi.co/api/people/';
+        var newurl = 'https://swapi.co/api/people/';
       } else {
         var newurl = passedurl;
       }
@@ -132,7 +132,7 @@ angular.module('starWarsApp').service('mainService', function($http){
 
     this.getStarships = function(passedurl) {
       if(passedurl === undefined){
-        var newurl = 'http://swapi.co/api/starships/';
+        var newurl = 'https://swapi.co/api/starships/';
       } else {
         var newurl = passedurl;
       }
