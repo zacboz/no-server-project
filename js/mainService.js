@@ -4,7 +4,7 @@ angular.module('starWarsApp').service('mainService', function($http){
       if(passedurl === undefined){
         var newurl = 'https://swapi.co/api/planets/';
       } else {
-        var newurl = passedurl;
+        var newurl = [passedurl.slice(0, 4) + 's' + passedurl.slice(4)].join('');
       }
       return $http({
         method: 'GET',
@@ -41,7 +41,7 @@ angular.module('starWarsApp').service('mainService', function($http){
       if(passedurl === undefined){
         var newurl = 'https://swapi.co/api/species/';
       } else {
-        var newurl = passedurl;
+        var newurl = [passedurl.slice(0, 4) + 's' + passedurl.slice(4)].join('');
       }
       return $http({
         method: 'GET',
@@ -85,7 +85,7 @@ angular.module('starWarsApp').service('mainService', function($http){
       if(passedurl === undefined){
         var newurl = 'https://swapi.co/api/people/';
       } else {
-        var newurl = passedurl;
+        var newurl = [passedurl.slice(0, 4) + 's' + passedurl.slice(4)].join('');
       }
       return $http({
         method: 'GET',
@@ -134,7 +134,7 @@ angular.module('starWarsApp').service('mainService', function($http){
       if(passedurl === undefined){
         var newurl = 'https://swapi.co/api/starships/';
       } else {
-        var newurl = passedurl;
+        var newurl = [passedurl.slice(0, 4) + 's' + passedurl.slice(4)].join('');
       }
       return $http({
         method: 'GET',
