@@ -6,7 +6,7 @@
 
 ### About the Project
 
-This was my first personal project as a student at DevMountain. The purpose was to primarily focus on front-end and putting our angular knowledge into use. I decided to make a simple Star War Wiki using the swapi api. I had a lot of fun and eventually would like to add game or quiz as well.  
+This was my first personal project as a student at DevMountain. The purpose was to primarily focus on front-end and putting our angular knowledge to use. I decided to make a simple Star Wars Wiki using the swapi api. I had a lot of fun and eventually would like to add game or quiz as well.  
 
 ## 1. Front-End
 
@@ -19,8 +19,8 @@ This was my first personal project as a student at DevMountain. The purpose was 
 
 ## 2. Screenshots
 
-* [Home Page] (http://i.imgur.com/y8o0YbJ.png)
-* [People Page] (http://i.imgur.com/tHcwL5q.png)
-* [Starships Page] (http://i.imgur.com/PHMVtK1.png)
-* [Species Page] (http://i.imgur.com/0HBgZ3g.jpg)
-* [Planets Page] (http://i.imgur.com/GYI8haT.png)
+* [Home Page] (http://i.imgur.com/Y4WN4Fh.png)
+* [People Page] (http://i.imgur.com/fzEuheq.png)
+* [Starships Page] (http://i.imgur.com/Y2PNdKX.png)
+* [Species Page] (http://i.imgur.com/aQmAEka.png)
+* [Planets Page] (http://i.imgur.com/KY9T1oi.png)
